@@ -1,7 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { StorybookUIRoot } from "./storybook";
-import Config from "react-native-config";
 
 const App = () => {
   return (
@@ -12,7 +11,7 @@ const App = () => {
   );
 };
 
-export default Config.LOAD_STORYBOOK === "true" ? StorybookUIRoot : App;
+export default process.env.LOAD_STORYBOOK === "true" ? StorybookUIRoot : App;
 
 const styles = StyleSheet.create({
   container: {

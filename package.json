@@ -25,6 +25,7 @@
     "@storybook/cli": "^6.5.13",
     "@storybook/react-native": "^5.3.25",
     "babel-loader": "^8.2.5",
+    "babel-plugin-inline-dotenv": "^1.7.0",
     "react-dom": "18.0.0"
   },
   "private": true
