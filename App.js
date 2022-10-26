@@ -1,17 +1,18 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { StorybookUIRoot } from "./storybook";
+import Config from "react-native-config";
 
-export default StorybookUIRoot;
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+};
 
-// const App = () => {
-//   return (
-//     <View style={styles.container}>
-//       <Text>Open up App.js to start working on your app!</Text>
-//       <StatusBar style="auto" />
-//     </View>
-//   );
-// };
+export default Config.LOAD_STORYBOOK === "true" ? StorybookUIRoot : App;
 
 const styles = StyleSheet.create({
   container: {
