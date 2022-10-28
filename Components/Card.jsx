@@ -1,8 +1,8 @@
 import React from "react";
-import { Card } from "react-native-paper";
+import { Card as PaperCard } from "react-native-paper";
 
 function Card() {
-  return <Card title="TEST" />;
+  return <PaperCard title="TEST" />;
 }
 
 export default Card;

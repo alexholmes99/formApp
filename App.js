@@ -2,14 +2,16 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { StorybookUIRoot } from "./storybook";
 import { Provider as PaperProvider } from "react-native-paper";
+import Card from "./Components/Card";
 
 const App = () => {
   return (
     <PaperProvider>
-      <View style={styles.container}>
+      <Card />
+      {/* <View style={styles.container}>
         <Text>Open up App.js to start working on your app!</Text>
         <StatusBar style="auto" />
-      </View>
+      </View> */}
     </PaperProvider>
   );
 };
